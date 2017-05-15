@@ -6,7 +6,7 @@ u {padding: 0px 2px;}
 .desktop {display: none;}
 .center {text-align: center;}
 
-button {width: 100%; background: #fff; border: none; padding: 5px 20%; text-align: left;}
+button {width: 100%; background: #fff; border: none; padding: 5px 20%; height: 60px; text-align: left;}
 button a { text-decoration: none; position: relative; color: #181818;  font-weight: 100; outline : none;}
 button a:hover, button a:active, button:focus {outline:0;}
 button a:before { 
@@ -24,7 +24,7 @@ nav {height: 0; position: relative; z-index: -1; opacity: 0; transition: .3s;}
 nav.abierto {height: 100%; opacity: 1; z-index: 1; }
 nav ul { padding: 0; margin: 0 0 0 2px; border-left: 2px solid #FF5B36;}
 	nav ul li {display: block; width: 100%; }
-	nav ul li a { color: #181818; padding: 5px; padding-left: 5%; border-top: 1px solid rgba(203, 203, 203, 0.4); display:block; text-decoration: none;}
+	nav ul li a { color: #181818; padding: 11px 6px; padding-left: 5%; border-top: 1px solid rgba(203, 203, 203, 0.4); display:block; text-decoration: none;}
 
 nav ul ul {margin:0 0 0 7%; border-left: 7px solid #FF5B36;}
 	nav ul ul li {padding-left: 5%;}
