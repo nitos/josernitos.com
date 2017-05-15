@@ -78,7 +78,7 @@ section.services .cta:hover { background: #181818; color: #fff;}
 .services .ux-diagnosis u a:active {background:#00fa9a; color: #181818;}
 
 
-section.experience ul {padding: 0; margin: 0; display: inline-block; background: #fff; border:1px solid #FF5B36; padding: 5px;}
+section.experience ul {padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: space-between; background: #fff; border:1px solid #FF5B36; padding: 5px;}
 section.experience ul li {float: left; display: inline-block; padding: 2% 4%; width: 25%;}
 
 section.experience .agencias ul {padding: 2% 3%;}
