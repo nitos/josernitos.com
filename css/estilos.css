@@ -1,0 +1,235 @@
+* {font-family: 'Hind Madurai', sans-serif;}
+img {max-width: 100%;}
+body {background: #fcfcfc; font-size: 1.1em; line-height: 1.4em;}
+div.body {padding: 0 30px;}
+u {padding: 0px 2px;}
+.desktop {display: none;}
+.center {text-align: center;}
+
+button {width: 100%; background: #fff; border: none; padding: 5px 20%; text-align: left;}
+button a { text-decoration: none; position: relative; color: #181818;  font-weight: 100; outline : none;}
+button a:hover, button a:active, button:focus {outline:0;}
+button a:before { 
+	content: '';
+	background: url(../menu.png);
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: -35px;
+    top: -2px;
+}
+
+nav {height: 0; position: relative; z-index: -1; opacity: 0; transition: .3s;}
+nav.abierto {height: 100%; opacity: 1; z-index: 1; }
+nav ul { padding: 0; margin: 0 0 0 2px; border-left: 2px solid #FF5B36;}
+	nav ul li {display: block; width: 100%; }
+	nav ul li a { color: #181818; padding: 5px; padding-left: 5%; border-top: 1px solid rgba(203, 203, 203, 0.4); display:block; text-decoration: none;}
+
+nav ul ul {margin:0 0 0 7%; border-left: 7px solid #FF5B36;}
+	nav ul ul li {padding-left: 5%;}
+
+.letstalk {padding: 3px 10px; color: #fff; text-decoration: none; background: #FF5B36; margin-top: 3px; display: inline-block;}
+.letstalk:hover {background: #181818; transition: .4s;}
+
+section h2 {text-align: center; font-size: 2.3em; font-weight: 600;}
+section h3 {font-size: 1.7em; font-weight: 300;}
+
+header {background: #FF5B36; color: #fff; padding: 20px 20px; text-align: center;}
+	header img { max-width: 100%; }
+	header h4 {margin-top: -10px; font-size: .9em; font-weight: 500;}
+
+section.descripcion { margin-bottom: 10px; }
+	section.descripcion ul { margin-bottom: 10px; padding-left: 5px; border-left: 5px solid #ccc; }
+	section.descripcion ul li { display: block;  font-size: 0.8em;}
+
+section.services p.available {font-weight: 100;}
+
+.services .servicio {margin: 80px 0;}
+.services .servicio.ux-strategy {margin: 60px 0 120px 0;}
+.servicio h3 {margin: 0;}
+
+.servicio p { font-size: .9em; }
+
+.services .cta { padding: 0 0 0 30px; display: inline-block; font-size: 1em; width: 230px;
+	text-decoration: none; font-weight: 600; color: #181818; 
+	transition: .15s cubic-bezier(.33,.66,.66,1); }
+section.services .cta:hover { background: #181818; color: #fff;} 
+
+.services img { display: block; margin:0 auto;}
+.services .cta p {}
+.services .cta p span {display: block; font-weight: 100;}
+
+.services u a {transition: background .15s cubic-bezier(.33,.66,.66,1); color: #474747;  text-decoration: none;}
+.services u {text-decoration: none; }
+.services .ux-strategy .cta  {background: #ffd700; }
+.services .ux-strategy u {box-shadow: inset 0 -4px 0 #ffd700; border-bottom: 3px solid #ffd700;}
+.services .ux-strategy u a:hover, .services .ux-strategy u a:focus, 
+.services .ux-strategy u a:active {background: #ffd700; color: #181818;}
+
+.services .ux-design .cta {background: #b4e7f8; }
+.services .ux-design u {box-shadow: inset 0 -4px 0 #b4e7f8; border-bottom: 3px solid #b4e7f8;}
+.services .ux-design u a:hover, .services .ux-design u a:focus,
+.services .ux-design u a:active {background: #b4e7f8; color: #181818;}
+
+.services .ux-diagnosis .cta {background: #00fa9a; }
+.services .ux-diagnosis u {box-shadow: inset 0 -4px 0 #00fa9a; border-bottom: 3px solid #00fa9a;}
+.services .ux-diagnosis u a:hover, .services .ux-diagnosis u a:focus,
+.services .ux-diagnosis u a:active {background:#00fa9a; color: #181818;}
+
+
+section.experience ul {padding: 0; margin: 0; display: inline-block; background: #fff; border:1px solid #FF5B36; padding: 5px;}
+section.experience ul li {float: left; display: inline-block; padding: 2% 4%; width: 25%;}
+
+section.experience .agencias ul {padding: 2% 3%;}
+section.experience .agencias ul li {width: 42%;}
+
+footer {background: #FF5B36; padding: 20px 20px 10px; margin-top: 50px;}
+footer ul.social {padding: 0; display: inline-block; margin:0;}
+footer ul.social li {float: left; display: inline-block; padding: 3px 10px;}
+footer ul.social li a {color: #fff; text-decoration: none;}
+footer ul.social li a:hover { text-decoration: underline;}
+
+
+.body h2.titulo { font-size: 2.3em;
+    border-bottom: 5px solid #ff5b36;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    font-weight: 300; }
+
+.body .contenido a { color: #ff5b36; }
+
+
+.community h3, .body .contenido h3 {font-weight: 300; font-size: 1.5em;}
+.community h4 {font-weight: 600; text-decoration: underline;}
+
+form {margin-bottom: 100px;}
+input {width: 50%; float: left; border: 1px solid rgba(0, 0, 0, 0.16); min-width: 250px;}
+input[name=name] { margin-bottom: 10px;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: rgba(255, 91, 54, 0.81);
+font-size: .9em; padding: 5px; }
+
+textarea { width: 80%; height:200px; margin: 10px 0; border: 1px solid rgba(0, 0, 0, 0.16); min-width: 250px;}
+input[type="submit"] {background: #ff5b36; color: #fff}
+input[type="submit"]:hover {background: #fff; color: #ff5b36; border: 2px solid #ff5b36;}
+
+@media (min-width: 600px) {
+		
+		div.body { padding: 0 70px; }
+		.services .cta { width: 200px; }
+		.celular {display: none;}
+		.desktop {display: block;}
+		
+		nav.desk .body {padding: 0 70px;}
+		nav.desk {height: 100%; z-index: 1; visibility: visible; opacity: 1; margin:0 auto; display: inline-block; margin: 0 auto; width: 100%;}
+		nav.desk img { display: inline-block; float: left; width: 22%; margin-top: 20px;}
+		nav.desk ul, nav.desk ul li, nav.desk ul ul, nav.desk ul ul li { border: none; display: inline-block; float: left; padding: 0; margin:0; width: auto;}
+		
+		nav.desk ul {float: right; margin-top: 20px;}
+		nav.desk ul li { display: inline-block; padding: 5px 0 0 40px;}
+		nav.desk ul li:nth-child(1) {padding: 5px 0 0 0;}
+		nav.desk ul li a {border: none;}
+		nav.desk ul li a.active, nav.desk ul li a:hover {color: #FF5B36;}
+
+		nav.desk ul li.submenu ul {display: none; width: 200px; position: absolute; background: #fff;  border: 1px solid rgba(255, 91, 54, 0.8);}
+		nav.desk ul li.submenu:hover ul {display: block;}
+		nav.desk ul li.submenu ul li {display: block; float: none;}
+		
+		.services .servicio ul.desktop {
+		float: right;
+		width: 40%;
+	    padding: 0;
+	    margin: 0;
+	    font-weight: 100;
+	    font-size: 0.9em;
+	    font-style: italic;
+	    padding-left: 10px;
+	    border-left: 7px solid rgba(0, 0, 0, 0.31);}
+
+	    .services .servicio ul.desktop li {display: block;}
+
+		header .desktop { width: 82%; margin:0 auto;  text-align: left;}
+		header .desktop h3 {font-weight: 100; font-size: 2em; line-height: 1.4em}
+		header .desktop h5 {font-weight: 100; font-size: .9em;}
+		
+		section.experience ul li {float: left; display: inline-block; padding: 1.5% 1.5%; width: 21%;}
+		section.experience .agencias ul li {width: 28%;}
+
+		footer ul.social { padding: 0; display: block; height: 30px; width: 90%; margin: 0 auto; }
+
+	}
+
+
+@media (min-width: 780px) {
+		
+		header .desktop { width: 72%; }
+
+		nav.desk img { width: auto; margin-top: 0; }
+
+		section.experience ul li {float: left; display: inline-block; padding: 2% 1%; width: 14%;}
+		section.experience .agencias ul li {width: 30%; padding: 1%;}
+		
+		div.body { width: 70%; margin:0 auto; }
+		section h2 { position: relative; font-size: 2.7em; font-weight: 600;}
+		section h2:before, section h2:after { content: ''; display: inline-block; width: 20%; background: #181818; height: 5px; position: absolute; margin-top: 12px }
+		section h2:before { left: 0; }
+		section h2:after { right: 0; }
+		
+		section.services { margin-top: 40px;}
+		.services .servicio {position: relative;}
+
+		.services h3 { position: relative; font-size: 1.8em;}
+		.services h3:before {content: ''; display: inline-block; height: 5px; width: 10%; position: absolute; top:26px; z-index: -1;}
+		.services .ux-strategy h3:before {background: #ffd700;}
+		.services .ux-design h3:before {background: #b4e7f8;}
+		.services .ux-diagnosis h3:before {background: #00fa9a;}
+		
+		.services .cta { width: 34%;}
+		.services .servicio ul.desktop { width: 33.4%; margin: 10px 0 0 0; border-left: none; }
+
+		section { width: 100%; display: inline-block; }
+		.services .cta {margin-top: 22px;}
+		.services .cta p {padding: 0 5px;}
+
+		p.resumen {width: 50%;  float: left; font-size: 1em; line-height: 1.7em; font-weight: 100;}
+		.cta {float: right; width: 200px;}
+
+		.servicio {float: left;}
+		
+		footer ul.social {width: 75%;}
+
+		.community {display: inline-block;}
+		.community div {width: 40%; float: left; display: block; padding: 0 10px 0 0;}
+		.community div.talks {width: 52%;}
+
+
+}
+
+
+@media (min-width: 1100px) {
+		header .desktop { width: 62%; }
+
+		div.body { width: 60%; margin:0 auto; }
+		section h2:before, section h2:after {  width: 30%; }
+
+		footer ul.social {width: 65%;}
+
+
+}
+
+
+
+@media (min-width: 1300px) {
+		header .desktop { width: 56%; }
+
+		div.body { width: 55%; margin:0 auto; }
+		p.resumen {margin-top: 30px;}
+
+		footer ul.social {width: 58%;}
+
+
+
+}
+
+
+
