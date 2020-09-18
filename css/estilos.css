@@ -121,7 +121,7 @@ input[type="submit"]:hover {background: #fff; color: #ff5b36; border: 2px solid 
 		
 		nav.desk .body {padding: 0 70px;}
 		nav.desk {height: 100%; z-index: 1; visibility: visible; opacity: 1; margin:0 auto; display: inline-block; margin: 0 auto; width: 100%;}
-		nav.desk img { display: inline-block; float: left; width: 22%; margin-top: 20px;}
+		nav.desk img { display: inline-block; float: left; width: 18%; margin-top: 30px;}
 		nav.desk ul, nav.desk ul li, nav.desk ul ul, nav.desk ul ul li { border: none; display: inline-block; float: left; padding: 0; margin:0; width: auto;}
 		
 		nav.desk ul {float: right; margin-top: 20px;}
@@ -163,7 +163,7 @@ input[type="submit"]:hover {background: #fff; color: #ff5b36; border: 2px solid 
 		
 		header .desktop { width: 72%; }
 
-		nav.desk img { width: auto; margin-top: 0; }
+		nav.desk img { width: 25%; margin-top: 12px; }
 
 		section.experience ul li {float: left; display: inline-block; padding: 2% 1%; width: 14%;}
 		section.experience .agencias ul li {width: 30%; padding: 1%;}
@@ -207,6 +207,7 @@ input[type="submit"]:hover {background: #fff; color: #ff5b36; border: 2px solid 
 
 @media (min-width: 1100px) {
 		header .desktop { width: 62%; }
+		nav.desk img { width: 25%; margin-top: 10px; }
 
 		div.body { width: 60%; margin:0 auto; }
 		section h2:before, section h2:after {  width: 30%; }
