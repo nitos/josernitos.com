@@ -81,6 +81,22 @@ img {
 	padding:0 10px;
 }
 
+
+@-webkit-keyframes hint {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.scroll-hint{
+  font-size: 2em;
+  color: #333;
+  text-decoration: blink;
+  -webkit-animation-name: hint;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
 @media (min-width: 420px) {
 
 	h1 {font-size: 3em;}
