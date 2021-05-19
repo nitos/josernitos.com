@@ -19,7 +19,7 @@ header {
   position: relative;
   height: 95vh;
   background: url("imagenes/los-anteojos.png") no-repeat;
-  background-size: 90%;
+  background-size: 70%;
   background-position: center;
 }
 
@@ -76,6 +76,8 @@ img {
   text-align: center;
   position: relative;
   width: 100%;
+  height: 40vh;
+  margin-top: 25vh;
 }
 
 .elegir, .blur {
@@ -145,47 +147,50 @@ section#agradecimiento p {
 
 @media (min-width: 420px) {
   
-h1 {font-size: 3em;}
-section { width: 70%;}
-img { max-width: 95%; }
+	h1 {font-size: 3em;}
+	section { width: 70%;}
+	img { max-width: 95%; }
+  .ilusion {padding: 5em;}
 
-.wrapper {
-   width: 80vw;
-   margin: 0 auto;
-   height: 100px;
+  .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+	}
+
+@media (min-width: 600px) {
+  .wrapper { 
+    margin-bottom: 0; 
+    padding-bottom: 0;
+    height: 70vh;
   }
 
 }
 
-@media (min-width: 600px) {
-header { background-size: 70%;}
-.wrapper {height: 340px; margin-bottom: 0; padding-bottom: 0;}
-.ilusion {padding: 5em;}
-
-}
-
 @media (min-width: 700px) {
-
-	h1 {font-size: 4em;}
-	section { width: 50%;}
+  .wrapper { height: 80vh; }
+	 h1 {font-size: 4em;}
+	 section { width: 50%;}
 
 }
 
 @media (min-width: 850px) {
-  .wrapper {padding-bottom: 5em;}
+  .wrapper { height: 100vh; }
+
 }
 
 @media (min-width: 1000px) {
+  .wrapper { height: 120vh; }
 
-  .wrapper {height: 30em; padding-bottom: 15%; }
-	section {width: 540px;}
-	img { max-width: 95%; }
+	 section {width: 540px;}
+	 img { max-width: 95%; }
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .wrapper {
-    height: 900px;
+    height: 1400px;
     width: 1200px;
     padding-bottom: 1%;
   }
