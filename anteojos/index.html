@@ -74,6 +74,7 @@
   		<p>Este es el segundo mini-ensayo que publico sobre objetos. El primero fue sobre <a href="https://josernitos.com/la-espatula/">La Espátula</a>, por si gusta leerlo. :)</p>
   		<p>También he escrito otros textos, los cuales intento recopilarlos en: <a href="https://txt.josernitos.com">txt.josernitos.com</a>.</p>
   		<p>Por último, este contenido no habría sido posible sin las fotos de: <i>Adriana, Alberto, Andrea, Carlos, Eliana, Felipe, Fernanda, Gabriela, Glory, Irene, Jorge Arango, Jose Luis, Joyce, Leo, Majo, María, Melissa, Mildred, Priz, Raquel, Riri, Roberth, Sofía, Sol, Tomás de Camino y Valeria.</i></p>
+  		<p>También agradezco a Federico por ayudarme a pulir el código y a Leo que me señaló dos horrores gramaticales.</p>
 		<p class="centrado"><b>¡Gracias por enviarme fotos de sus anteojos!  <3</b></p>
 	</section>
 
@@ -90,8 +91,15 @@
 		  	element.classList.toggle("difuso");
 		}	
 
-		var img = document.getElementById('masked');
+		var lensSize = '14vw';
+		var lensFocus = '17vw';
 
+		if ($(window).width() >= 1500) {
+		  lensSize = '150px';
+		  lensFocus = '190px';
+		}
+
+		var img = document.getElementById('masked');
 		img.addEventListener('mousemove', mouseListen, false);
 
 		function mouseListen(e){
@@ -101,14 +109,9 @@
 		  setMaskPos(x,y);
 		}
 
+		
 		function setMaskPos(x,y) {
-			if ($(window).width() < 1500) {
-			   img.setAttribute("style", "-webkit-mask-image: radial-gradient(circle at " + x + "px " + y + "px, black 0px, black 14vw, transparent 17vw)");
-			}
-			else {
-			   img.setAttribute("style", "-webkit-mask-image: radial-gradient(circle at " + x + "px " + y + "px, black 0px, black 150px, transparent 190px)");
-			}
-		  
+		   img.setAttribute("style", "-webkit-mask-image: radial-gradient(circle at " + x + "px " + y + "px, black 0px, black " + lensSize + " , transparent " + lensFocus + ")");
 		}
 
 		// Initialise the mask off screen
