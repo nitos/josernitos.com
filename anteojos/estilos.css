@@ -19,7 +19,7 @@ header {
   position: relative;
   height: 95vh;
   background: url("imagenes/los-anteojos.png") no-repeat;
-  background-size: 70%;
+  background-size: 90%;
   background-position: center;
 }
 
@@ -159,8 +159,8 @@ section#agradecimiento p {
 	}
 
 @media (min-width: 600px) {
+	header { background-size: 70%;}
   .wrapper {height: 340px; margin-bottom: 0; padding-bottom: 0;}
-
 }
 
 @media (min-width: 700px) {
