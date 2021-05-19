@@ -1,0 +1,192 @@
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+body {font-family: 'Open Sans', sans-serif; color: #333;}
+
+p {font-size: 18px; line-height: 28px;}
+a { color: #CC311C; }
+hr { border: 1px solid #CC311C;  width: 80%;}
+
+header {
+  position: relative;
+  height: 95vh;
+  background: url("imagenes/los-anteojos.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.box {	
+	display: flex;
+	flex-flow: column;
+    height: 100vh;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 2vh;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+
+h1, header p, header a {
+	color: #fff;
+}
+
+section {
+	margin:0 auto;
+	display: block;
+	width: 85%;
+	padding: 8em 0 8em;
+	position: relative;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+
+.ilusion {
+  background: #000;
+}
+
+.elegir, .blur {
+  width: auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.elegir, .blur {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.blur {
+  filter: blur(7px)
+}
+
+.difuso {
+  text-shadow: 0 0 6px #000;
+  color: transparent;
+}
+
+#comparamos {
+  text-shadow: 0 0 0px;
+  color: ;
+}
+
+.centrado { text-align: center; }
+
+section#agradecimiento p {
+  text-shadow: 0 0 0px;
+  color: #797979;
+}
+
+.todos {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  background: #EBEFF4;
+  margin: 0;
+  height: 75vh;
+}
+
+.todos img {
+	padding:0 10px;
+  max-width: max-content;
+}
+
+.scroll-hint {
+  font-size: 1.3em;
+  color: #333;
+  text-decoration: blink;
+  -webkit-animation-name: hint;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes hint {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+
+
+
+@media (min-width: 420px) {
+  
+	h1 {font-size: 3em;}
+	section { width: 70%;}
+	img { max-width: 95%; }
+  .ilusion {padding: 5em;}
+
+  .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    height: 100px;
+  }
+
+	}
+
+@media (min-width: 600px) {
+  .wrapper {height: 340px; margin-bottom: 0; padding-bottom: 0;}
+
+}
+
+@media (min-width: 700px) {
+
+	h1 {font-size: 4em;}
+	section { width: 50%;}
+
+}
+
+@media (min-width: 850px) {
+  .wrapper {padding-bottom: 5em;}
+}
+
+@media (min-width: 1000px) {
+
+  .wrapper {height: 30em; padding-bottom: 15%; }
+	section {width: 540px;}
+	img { max-width: 95%; }
+
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    height: 900px;
+    width: 1200px;
+    padding-bottom: 1%;
+  }
+
+}
