@@ -145,22 +145,23 @@ section#agradecimiento p {
 
 @media (min-width: 420px) {
   
-	h1 {font-size: 3em;}
-	section { width: 70%;}
-	img { max-width: 95%; }
-  .ilusion {padding: 5em;}
+h1 {font-size: 3em;}
+section { width: 70%;}
+img { max-width: 95%; }
 
-  .wrapper {
-    width: 80vw;
-    margin: 0 auto;
-    height: 100px;
+.wrapper {
+   width: 80vw;
+   margin: 0 auto;
+   height: 100px;
   }
 
-	}
+}
 
 @media (min-width: 600px) {
-	header { background-size: 70%;}
-  .wrapper {height: 340px; margin-bottom: 0; padding-bottom: 0;}
+header { background-size: 70%;}
+.wrapper {height: 340px; margin-bottom: 0; padding-bottom: 0;}
+.ilusion {padding: 5em;}
+
 }
 
 @media (min-width: 700px) {
