@@ -43,7 +43,7 @@
   
   i {font-weight:300; }
   
-  span i a:hover {
+  span i a:hover, footer a:hover {
 	background:#E0FF4F; 
 	border:none;
 	color:#000;
